@@ -4,7 +4,7 @@ def addition(a,b):
         nombre2 = float(b)
         return nombre1 + nombre2
     except ValueError:
-        "Erreur de saisie"
+        return "Erreur de saisie"
 
     
 def soustraction(a,b):
@@ -13,7 +13,7 @@ def soustraction(a,b):
         nombre2 = float(b)
         return nombre1 - nombre2
     except ValueError:
-        "Erreur de saisie"
+        return "Erreur de saisie"
     
 
 def multiplication(a,b):
@@ -22,7 +22,7 @@ def multiplication(a,b):
         nombre2 = float(b)
         return nombre1 * nombre2
     except ValueError:
-        "Erreur de saisie"
+        return "Erreur de saisie"
 
 def division(a,b):
     try:
@@ -33,6 +33,6 @@ def division(a,b):
         except ZeroDivisionError:
             "La division par zero n'est pas possible"
     except ValueError:
-        "Erreur de saisie"
+        return "Erreur de saisie"
     
     

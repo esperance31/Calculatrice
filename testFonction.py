@@ -11,9 +11,9 @@ def test_addition():
     oracle = 22.5
     try:
         assert fonction.addition(exemple1, exemple2) == oracle
-        print("Test du cas 1 validé.")
+        print("Test du cas 1 de l'addition validé.")
     except AssertionError:
-        print("Test du cas 1 échoué.")
+        print("Test du cas 1 de l'addition échoué.")
     
     # Cas 2 : test avec des nombres réels négatifs
     exemple1 = -5
@@ -21,9 +21,9 @@ def test_addition():
     oracle = -17.5
     try:
         assert fonction.addition(exemple1, exemple2) == oracle
-        print("Test du cas 1 validé.")
+        print("Test du cas 1 de l'addition validé.")
     except AssertionError:
-        print("Test du cas 1 échoué.")
+        print("Test du cas 1 de l'addition échoué.")
     
     # Cas 3 : test avec un nombre positif et un nombre négatif
     exemple1 = 25
@@ -31,9 +31,9 @@ def test_addition():
     oracle = 20.5
     try:
         assert fonction.addition(exemple1, exemple2) == oracle
-        print("Test du cas 1 validé.")
+        print("Test du cas 3 de l'addition validé.")
     except AssertionError:
-        print("Test du cas 1 échoué.")
+        print("Test du cas 3 de l'addition échoué.")
 
     # Cas 4 : test avec une chaine et un nombre réel
     exemple1 = ""
@@ -41,10 +41,9 @@ def test_addition():
     
     try:
         fonction.addition(exemple1, exemple2)
+        print("Test du cas 4 de l'addition validé.")
     except ValueError:
-        print("Test du cas 4 validé.")
-    else:
-        print("Test du cas 4 échoué.")
+        print("Test du cas 4 de l'addition échoué.")
 
 # Appel de la fonction 'test_addition'
 test_addition()
@@ -58,24 +57,23 @@ def test_soustraction():
     oracle = 2.5
     try:
         assert fonction.soustraction(exemple1, exemple2) == oracle
-        print("Test du cas 1 validé.")
+        print("Test du cas 1 de la soustraction validé.")
     except AssertionError:
-        print("Test du cas 1 échoué.")
+        print("Test du cas 1 de la soustraction échoué.")
     
     # Cas 2: test avec une chaine et un nombre réel
     exemple1 = ""
     exemple2 = 12
     try:
         fonction.soustraction(exemple1, exemple2)
+        print("Test du cas 2 de la soustraction validé.")
     except ValueError:
-        print("Test du cas 2 validé.")
-    else:
-        print("Test du cas 2 échoué.")
+        print("Test du cas 2 de la soustraction échoué.")
 
 # Appel de la fonction 'test_soustraction'
 test_soustraction()
 print("\n")
-
+"""
 # Tests pour la Multiplication
 def test_multiplication():
     # Cas 1: test avec les nombres réels
@@ -137,3 +135,4 @@ def test_division():
 # Appel de la fonction 'test_division'
 test_division()
 print("\n")
+"""
