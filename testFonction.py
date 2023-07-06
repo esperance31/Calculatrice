@@ -73,7 +73,7 @@ def test_soustraction():
 # Appel de la fonction 'test_soustraction'
 test_soustraction()
 print("\n")
-"""
+
 # Tests pour la Multiplication
 def test_multiplication():
     # Cas 1: test avec les nombres réels
@@ -91,9 +91,8 @@ def test_multiplication():
     exemple2 = 12
     try:
         fonction.multiplication(exemple1, exemple2)
-    except ValueError:
         print("Test du cas 2 de la multiplication validé.")
-    else:
+    except ValueError:
         print("Test du cas 2 de la multiplication échoué.")
 
 # Appel de la fonction 'test_multiplication'
@@ -117,9 +116,8 @@ def test_division():
     exemple2 = 0
     try:
         fonction.division(exemple1, exemple2)
-    except ValueError:
         print("Test du cas 2 de la division validé.")
-    else:
+    except ValueError:
         print("Test du cas 2 de la division échoué.")
 
     # Cas 3: test avec une chaine et un nombre réel
@@ -127,12 +125,10 @@ def test_division():
     exemple2 = 12
     try:
         fonction.division(exemple1, exemple2)
-    except ValueError:
         print("Test du cas 3 de la division validé.")
-    else:
+    except ValueError:
         print("Test du cas 3 de la division échoué.")
 
 # Appel de la fonction 'test_division'
 test_division()
 print("\n")
-"""
