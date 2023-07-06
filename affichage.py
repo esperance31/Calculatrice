@@ -30,26 +30,28 @@ while (boucle == 1):
             resultat = fonction.addition(nombre1,nombre2)
             print("L'addition de",nombre1," et de ",nombre2,"est:", resultat)
         else:
-            fonction.addition(nombre1,nombre2)
+            print(fonction.addition(nombre1,nombre2))
     elif (choix == 2):
         if (nombre1.isdigit() and nombre2.isdigit()):
             resultat = fonction.soustraction(nombre1,nombre2)
             print("La soustraction de",nombre1," et de ",nombre2,"est:", resultat)
         else:
-            fonction.soustraction(nombre1,nombre2)
+            print(fonction.soustraction(nombre1,nombre2))
     elif (choix == 3):
         if (nombre1.isdigit() and nombre2.isdigit()):
             resultat = fonction.multiplication(nombre1,nombre2)
             print("La multiplication de",nombre1," et de ",nombre2,"est:", resultat)
         else:
-            fonction.multiplication(nombre1,nombre2)
+            print(fonction.multiplication(nombre1,nombre2))
     elif (choix == 4):
         if (nombre1.isdigit() and nombre2.isdigit()  ):
-            if (nombre2!=0): 
+            if (nombre2==0): 
+                fonction.division(nombre1,nombre2)
+            else:
                 resultat = fonction.division(nombre1,nombre2)
                 print("La division de",nombre1," et de ",nombre2,"est:", resultat)
         else:
-            fonction.division(nombre1,nombre2)
+            print(fonction.division(nombre1,nombre2))
     else:
         print("Entrer un numero entre 1 et 4")
         
