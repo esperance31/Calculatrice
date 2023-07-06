@@ -11,16 +11,16 @@ while (boucle == 1):
     nombre2 = input("Entrer le deuxieme nombre : \n")
 
     #Afficher un menu proposant les opérations disponibles.
-    print("**************************************************************************************************")
-    print("*********************************Bienvenue sur la calculatrice************************************")
-    print("**************************************************************************************************")
-    print("Vous pouvez effectuer des opérations d'addition, de soustraction, de multiplication et de division")
+    
+    print("----------Bienvenue sur la calculatrice----------")
+    print("1. Addition")
+    print("2. Soustraction")
+    print("3. Multiplication")
+    print("4. Division")
 
     #Demander à l'utilisateur de choisir une opération en saisissant le numéro correspondant.
-    print("Pour effectuer une addition taper        ******************************************************* 1")
-    print("Pour effectuer une soustraction taper    ******************************************************* 2")
-    print("Pour effectuer une multiplication taper  ******************************************************* 3")
-    choix = int(input("Pour effectuer une division taper        ******************************************************* 4 :  \n"))
+    
+    choix = int(input("Choisissez une opération : "))
 
     #En fonction du choix de l'utilisateur, effectuer l'opération appropriée et afficher le résultat.
 
@@ -54,5 +54,3 @@ while (boucle == 1):
         print("Entrer un numero entre 1 et 4")
         
     boucle = int(input("Voulez vous effectuer une autre operation? Si oui taper 1 ou tout autre saisie pour quittez  :"))
-
-
