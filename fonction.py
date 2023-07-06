@@ -31,7 +31,7 @@ def division(a,b):
         try:
             return nombre1 / nombre2
         except ZeroDivisionError:
-            "La division par zero n'est pas possible"
+            return "La division par zero n'est pas possible"
     except ValueError:
         return "Erreur de saisie"
     
