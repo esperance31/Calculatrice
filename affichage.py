@@ -23,6 +23,7 @@ while (boucle == 1):
     #En fonction du choix de l'utilisateur, effectuer l'opération appropriée et afficher le résultat.
 
     #Demander à l'utilisateur de choisir une opération en saisissant le numéro correspondant.
+    
     choix = int(input("Choisissez une opération : "))
     if (choix == 1):
         if (isinstance(nombre1,float) and isinstance(nombre2,float )):
@@ -52,7 +53,6 @@ while (boucle == 1):
         else:
             print(fonction.division(nombre1,nombre2))
     else:
-        chance = int(input("Entrer un numero entre 1 et 4 :"))
-        essai=1
+        print("Entrer un numero entre 1 et 4 :")
         
     boucle = int(input("Voulez vous effectuer une autre operation? Si oui taper 1 ou tout autre saisie pour quittez  :"))
