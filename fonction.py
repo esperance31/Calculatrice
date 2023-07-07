@@ -34,5 +34,11 @@ def division(a,b):
             return "La division par zero n'est pas possible"
     except ValueError:
         return "Erreur de saisie"
-    
-    
+
+def puissance(a, b):
+    try:
+        nombre1 = float(a)
+        nombre2 = float(b)
+        return nombre1**nombre2
+    except ValueError:
+        return "Erreur de saisie"
