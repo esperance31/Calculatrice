@@ -28,7 +28,7 @@ while (boucle == 1):
     if (choix == 1):
         if (isinstance(nombre1,float) and isinstance(nombre2,float )):
             resultat = fonction.addition(nombre1,nombre2)
-            print("L'addition de",nombre1," et de ",nombre2,"est:", resultat)
+            print("L'addition de",nombre1," et de ",nombre2,"est:", str(resultat))
         else:
             print(fonction.addition(nombre1,nombre2))
     elif (choix == 2):
@@ -49,7 +49,7 @@ while (boucle == 1):
                 fonction.division(nombre1,nombre2)
             else:
                 resultat = fonction.division(nombre1,nombre2)
-                print("La division de",nombre1," et de ",nombre2,"est:", resultat)
+                print("La division de",nombre1," et de ",nombre2,"est:", str(resultat))
         else:
             print(fonction.division(nombre1,nombre2))
     else:
