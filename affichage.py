@@ -17,6 +17,8 @@ while (boucle == 1):
     print("2. Soustraction")
     print("3. Multiplication")
     print("4. Division")
+    print("5. Puissance")
+
 
     
 
@@ -27,10 +29,10 @@ while (boucle == 1):
     choix = int(input("Choisissez une opération : "))
     if (choix == 1):
         if (isinstance(nombre1,float) and isinstance(nombre2,float )):
-            resultat = fonction.addition(nombre1,nombre2)
-            print("L'addition de",nombre1," et de ",nombre2,"est:", str(resultat))
-        else:
             print(fonction.addition(nombre1,nombre2))
+        else:
+            resultat = fonction.addition(nombre1,nombre2)
+            print("L'addition de" + nombre1 + " et de " + nombre2 + "est:" + str(resultat))
     elif (choix == 2):
         if (isinstance(nombre1,float) and isinstance(nombre2,float )):
             resultat = fonction.soustraction(nombre1,nombre2)
@@ -52,7 +54,13 @@ while (boucle == 1):
                 print("La division de",nombre1," et de ",nombre2,"est:", str(resultat))
         else:
             print(fonction.division(nombre1,nombre2))
+    elif(choix == 5):
+        if (isinstance(nombre1,float) and isinstance(nombre2,float )):
+            resultat = fonction.puissance(nombre1,nombre2)
+            print("La puissanse de",nombre1," par ",nombre2,"est:", resultat)
+        else:
+            print(fonction.puissance(nombre1,nombre2))
     else:
-        print("Entrer un numero entre 1 et 4 :")
+        print("Entrer un numero entre 1 et 5 :")
         
-    boucle = int(input("Voulez vous effectuer une autre operation? Si oui taper 1 ou tout autre saisie pour quittez  :"))
+    boucle = float(input("Voulez vous effectuer une autre operation? Si oui taper 1 ou tout autre saisie pour quittez  :"))
