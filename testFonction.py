@@ -82,3 +82,17 @@ def test_division():
     exemple1 = ""
     exemple2 = 12
     fonction.division(exemple1, exemple2)
+
+
+# Tests pour la puissance entière
+def test_puissance():
+    # Cas 1 : test avec des nombres réels
+    exemple1 = 5
+    exemple2 = 2
+    oracle = 25
+    assert fonction.puissance(exemple1, exemple2) == oracle
+
+    # Cas 2: test avec une chaine et un nombre réel
+    exemple1 = ""
+    exemple2 = 2
+    fonction.puissance(exemple1, exemple2)
